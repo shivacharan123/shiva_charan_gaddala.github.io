@@ -12,12 +12,12 @@
   "name": "Shiva Charan Gaddala",
   "jobTitle": "AI Engineer",
   "description": "AI Engineer specializing in LLMs, Agentic AI, and production-grade ML systems.",
-  "email": "mailto:shivacharangaddala1234@gmail.com",
-  "url": "https://shivacharangaddala1234.dev",
+  "email": "mailto:shivacharangaddala@gmail.com",
+  "url": "https://shivacharangaddal.dev",
   "sameAs": [
-    "https://github.com/shivacharan123",
-    "https://www.linkedin.com/in/shiva-charan9/",
-    "https://huggingface.co/shivacharan099"
+    "https://github.com/shivacharan",
+    "https://www.linkedin.com/in/shiva-charan/",
+    "https://huggingface.co/shivacharan"
   ],
   "alumniOf": {
     "@type": "CollegeOrUniversity",
@@ -28,7 +28,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Epilogue:wght@100..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Epilogue:wght@300;400;500;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -428,94 +428,6 @@ footer{background:var(--ink2);border-top:1px solid rgba(255,255,255,.06);padding
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
 }
-
-/* ═══════ UPGRADE PACK ═══════ */
-@property --aur1{syntax:'<color>';inherits:true;initial-value:transparent}
-@property --aur2{syntax:'<color>';inherits:true;initial-value:transparent}
-@property --aur3{syntax:'<color>';inherits:true;initial-value:transparent}
-:root{--aur1:rgba(255,59,0,.20);--aur2:rgba(0,87,255,.15);--aur3:rgba(0,168,107,.16);transition:--aur1 .8s,--aur2 .8s,--aur3 .8s}
-[data-theme="dark"]{--aur1:rgba(255,59,0,.30);--aur2:rgba(60,110,255,.26);--aur3:rgba(0,200,130,.20)}
-
-/* 1 · film grain + CRT scanlines (auto in dark mode, toggle in nav) */
-.film{position:fixed;inset:0;pointer-events:none;z-index:998;opacity:0;transition:opacity .5s ease;overflow:hidden;
-  background:radial-gradient(ellipse at center,transparent 62%,rgba(0,0,0,.26) 100%)}
-html[data-film="on"] .film{opacity:1;animation:flicker 7s steps(1) infinite}
-.film::before{content:'';position:absolute;inset:0;
-  background:repeating-linear-gradient(to bottom,transparent 0,transparent 2px,rgba(0,0,0,.05) 3px,transparent 4px)}
-[data-theme="dark"] .film::before{background:repeating-linear-gradient(to bottom,transparent 0,transparent 2px,rgba(0,0,0,.22) 3px,transparent 4px)}
-.film::after{content:'';position:absolute;inset:-120px;opacity:.07;animation:grain 1s steps(8) infinite;
-  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px 180px}
-@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-40px,25px)}40%{transform:translate(30px,-35px)}60%{transform:translate(-25px,-20px)}80%{transform:translate(35px,30px)}100%{transform:translate(0,0)}}
-@keyframes flicker{0%,93%,100%{opacity:1}94%{opacity:.88}96%{opacity:.96}}
-.film-toggle[aria-pressed="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}
-
-/* 2 · magnetic / springy hover (transform driven by JS springs) */
-[data-spring]{will-change:transform;transition-property:background-color,color,border-color,opacity,box-shadow!important}
-.nav-links a,.footer-right a{display:inline-block}
-.proj-card[data-spring],.blog-card[data-spring],.model-card[data-spring]{position:relative}
-.proj-card[data-spring]:hover,.blog-card[data-spring]:hover,.model-card[data-spring]:hover{z-index:3}
-
-/* 3 · direction-aware, staggered entrances + drawn accent line */
-.fade-in[data-dir="left"]{transform:translateX(-40px)}
-.fade-in[data-dir="right"]{transform:translateX(40px)}
-.fade-in[data-dir].visible{transform:none}
-@keyframes revealIn{from{opacity:0;transform:translate3d(var(--dx,0),var(--dy,32px),0)}to{opacity:1;transform:none}}
-.js .fade-in:not(.visible) .rv{opacity:0}
-.js .fade-in.visible .rv{animation:revealIn .85s cubic-bezier(.2,.8,.2,1) backwards;animation-delay:calc(var(--i,0)*85ms)}
-.sect-header{position:relative}
-.sect-header::after{content:'';position:absolute;left:0;bottom:-1px;width:100%;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;opacity:1}
-.sect-header.line-in::after{animation:drawLine 1.5s cubic-bezier(.2,.8,.2,1) forwards}
-@keyframes drawLine{0%{transform:scaleX(0);opacity:1}55%{transform:scaleX(1);opacity:1}100%{transform:scaleX(1);opacity:.25}}
-@keyframes slideR{from{opacity:0;transform:translateX(-26px)}to{opacity:1;transform:none}}
-.js .sect-header:not(.line-in) .sect-num,.js .sect-header:not(.line-in) .sect-title{opacity:0}
-.sect-header.line-in .sect-num{animation:slideR .7s .1s cubic-bezier(.2,.8,.2,1) backwards}
-.sect-header.line-in .sect-title{animation:slideR .85s .2s cubic-bezier(.2,.8,.2,1) backwards}
-
-/* 5 · aurora gradient mesh */
-.aurora{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
-.aurora--b{transform:scaleX(-1)}
-.aurora i{position:absolute;border-radius:50%;filter:blur(80px);will-change:transform}
-.aurora i:nth-child(1){width:46vmax;height:46vmax;left:-12%;top:-20%;background:radial-gradient(circle at 40% 40%,var(--aur1),transparent 65%);animation:aur1 28s ease-in-out infinite alternate}
-.aurora i:nth-child(2){width:40vmax;height:40vmax;right:-12%;top:5%;background:radial-gradient(circle at 50% 50%,var(--aur2),transparent 65%);animation:aur2 34s ease-in-out infinite alternate}
-.aurora i:nth-child(3){width:38vmax;height:38vmax;left:28%;bottom:-32%;background:radial-gradient(circle at 50% 50%,var(--aur3),transparent 65%);animation:aur3 40s ease-in-out infinite alternate}
-[data-theme="dark"] .aurora i{mix-blend-mode:screen}
-.aurora.paused i{animation-play-state:paused}
-@keyframes aur1{to{transform:translate3d(18vw,12vh,0) scale(1.18)}}
-@keyframes aur2{to{transform:translate3d(-16vw,18vh,0) scale(.9)}}
-@keyframes aur3{to{transform:translate3d(-12vw,-14vh,0) scale(1.2)}}
-#contact{position:relative;overflow:hidden}
-#contact .sect-inner{position:relative;z-index:1}
-#contact .aurora{opacity:.85}
-
-/* 6 · selection + keyboard focus */
-::selection{background:var(--accent);color:#fff;text-shadow:none}
-#hero ::selection{background:var(--ink);color:var(--paper)}
-#about ::selection,#experience ::selection{background:var(--accent2);color:#fff}
-#contact ::selection{background:var(--yellow);color:#0d0d0d}
-a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,.ham:focus-visible{
-  outline:2px solid var(--accent);outline-offset:4px;border-radius:2px;
-  box-shadow:0 0 0 2px var(--paper),0 0 0 7px rgba(255,59,0,.22);animation:ring 1.8s ease-in-out infinite}
-@keyframes ring{50%{outline-offset:7px}}
-#contact :focus-visible{box-shadow:0 0 0 2px var(--ink),0 0 0 7px rgba(255,59,0,.3)}
-.arch-node:focus-visible{outline:2px dashed var(--accent);outline-offset:3px}
-.arch-node:focus-visible rect{stroke:var(--accent);stroke-width:3}
-
-/* 7 · micro-typography */
-body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;font-kerning:normal;font-optical-sizing:auto;font-feature-settings:"kern","liga","calt"}
-h1.hero-name{letter-spacing:-.05em;text-wrap:balance;animation:weightIn 1.6s cubic-bezier(.2,.8,.2,1) both}
-@keyframes weightIn{from{font-weight:200;letter-spacing:.01em}to{font-weight:900;letter-spacing:-.05em}}
-.sect-title{letter-spacing:-.035em;text-wrap:balance}
-.contact-big{letter-spacing:-.05em;text-wrap:balance}
-.proj-title-big,.proj-title-sm,.tl-role,.edu-deg,.cs-title,.blog-card-title{letter-spacing:-.02em;text-wrap:balance}
-p,.hero-desc,.tl-bullets li{text-wrap:pretty}
-.hstat-num,.pm-val{font-variant-numeric:tabular-nums}
-.sect-title,.proj-title-big,.proj-title-sm,.tl-role,.edu-deg,.cs-title,.blog-card-title,.model-card-name,.profile-name{
-  transition:font-weight .45s cubic-bezier(.2,.8,.2,1),letter-spacing .45s cubic-bezier(.2,.8,.2,1),color var(--tr)}
-.sect-header:hover .sect-title{font-weight:900;letter-spacing:-.045em}
-.proj-card:hover .proj-title-sm,.blog-card:hover .blog-card-title,.model-card:hover .model-card-name{font-weight:850}
-.project-featured:hover .proj-title-big,.tl-item:hover .tl-role,.edu-card2:hover .edu-deg,.case-study summary:hover .cs-title{font-weight:850}
-
-@media print{.film,.aurora{display:none!important}}
 </style>
 </head>
 <body>
@@ -526,7 +438,6 @@ p,.hero-desc,.tl-bullets li{text-wrap:pretty}
 <!-- Custom Cursor -->
 <div class="cursor" id="cursor" aria-hidden="true"></div>
 <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
-<div class="film" aria-hidden="true"></div>
 
 <!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
@@ -558,7 +469,6 @@ p,.hero-desc,.tl-bullets li{text-wrap:pretty}
       <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
       <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
     </button>
-    <button class="theme-toggle film-toggle" id="filmToggle" aria-label="Toggle film grain and scanlines" aria-pressed="false" title="Film grain + scanlines"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M7 22h10M2 9h20M2 13h20" opacity=".6"/></svg></button>
     <a href="#contact" class="nav-badge">Hire Me</a>
     <div class="ham" id="hamBtn" onclick="toggleMobile()" role="button" tabindex="0" aria-label="Open menu">
       <span></span><span></span><span></span>
@@ -569,11 +479,10 @@ p,.hero-desc,.tl-bullets li{text-wrap:pretty}
 
 <!-- HERO -->
 <section id="hero">
-  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
   <div class="grid-bg"></div>
   <canvas id="heroCanvas" aria-hidden="true"></canvas>
   <div class="hero-container">
-    <div class="hero-tag fade-in" data-dir="left">Available · Full-Time AI Engineer · 24/7 2026</div>
+    <div class="hero-tag fade-in">Available · Full-Time AI Engineer · June 2026</div>
     <h1 class="hero-name fade-in">
       Shiva<br>
       <span class="line-2">Charan</span>
@@ -604,8 +513,8 @@ p,.hero-desc,.tl-bullets li{text-wrap:pretty}
         </div>
         <div class="hero-actions">
           <a href="#projects" class="btn btn-fill">View Projects</a>
-          <a href="https://www.linkedin.com/in/shiva-charan9/" class="btn btn-accent">Get In Touch</a>
-          <a href="https://drive.google.com/file/d/1ur1P4dz19cF6rLB3U-Mx9PYxmBjPQsx4/view?usp=sharing" class="btn">↓ Resume</a>
+          <a href="https://www.linkedin.com/in/shiva-charan/" class="btn btn-accent">Get In Touch</a>
+          <a href="https://drive.google.com/file/d/1RvNfmQg_SEXoLgJ3aQPgD76H-cvrSpDE/view?usp=sharing" class="btn">↓ Resume</a>
         </div>
       </div>
     </div>
@@ -661,9 +570,9 @@ p,.hero-desc,.tl-bullets li{text-wrap:pretty}
         </div>
         <div class="status-badge">
           <span class="status-pulse"></span>
-          Available 24/7
+          Available June 2026
         </div>
-        <a href="https://www.linkedin.com/in/shiva-charan9/" class="btn btn-fill" style="text-align:center;justify-content:center">Contact Me</a>
+        <a href="https://www.linkedin.com/in/shiva-charan/" class="btn btn-fill" style="text-align:center;justify-content:center">Contact Me</a>
       </div>
       <div class="about-main">
         <p>I'm a Computer Science student at IIIT Nagpur, specializing in Artificial Intelligence and Machine Learning. My obsession is the gap between a brilliant model on a Jupyter notebook and a system that actually ships — and I've spent the last two years closing that gap through real projects, late nights debugging LangGraph state machines, and learning what <strong>"production-grade" truly means.</strong></p>
@@ -828,7 +737,7 @@ p,.hero-desc,.tl-bullets li{text-wrap:pretty}
           <span class="stag">Python</span><span class="stag">LangGraph</span><span class="stag">LangChain</span><span class="stag">FastAPI</span><span class="stag">Firecrawl</span><span class="stag">Pydantic</span><span class="stag">ThreadPoolExecutor</span>
         </div>
         <div class="proj-links-row">
-          <a href="https://github.com/shivacharan123/developer_tool-research" class="proj-lnk" target="_blank">
+          <a href="https://github.com/shivacharan/developer_tool-research" class="proj-lnk" target="_blank">
             <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
             GitHub
           </a>
@@ -911,7 +820,7 @@ p,.hero-desc,.tl-bullets li{text-wrap:pretty}
           <span class="stag">QLoRA</span><span class="stag">PEFT</span><span class="stag">TRL</span><span class="stag">BitsAndBytes</span>
         </div>
         <div class="proj-links-row">
-          <a href="https://github.com/shivacharan123/SKINCARE_advisor" class="proj-lnk" target="_blank">GitHub ↗</a>
+          <a href="https://github.com/shivacharan/SKINCARE_advisor" class="proj-lnk" target="_blank">GitHub ↗</a>
         </div>
       </div>
 
@@ -928,7 +837,7 @@ p,.hero-desc,.tl-bullets li{text-wrap:pretty}
           <span class="stag">PyTorch</span><span class="stag">ResNet50</span><span class="stag">Random Forest</span>
         </div>
         <div class="proj-links-row">
-          <a href="https://github.com/shivacharan123/leaf-disease-classification" class="proj-lnk" target="_blank">GitHub ↗</a>
+          <a href="https://github.com/shivacharan/leaf-disease-classification" class="proj-lnk" target="_blank">GitHub ↗</a>
         </div>
       </div>
     </div>
@@ -947,7 +856,7 @@ p,.hero-desc,.tl-bullets li{text-wrap:pretty}
           <span class="stag">TensorFlow</span><span class="stag">ResNet50</span><span class="stag">DenseNet121</span>
         </div>
         <div class="proj-links-row">
-          <a href="https://github.com/shivacharan123/lung_cancer_pred" class="proj-lnk" target="_blank">GitHub ↗</a>
+          <a href="https://github.com/shivacharan/lung_cancer_pred" class="proj-lnk" target="_blank">GitHub ↗</a>
         </div>
       </div>
       <div class="proj-card" style="border-right:none" data-tags="fullstack medical">
@@ -963,7 +872,7 @@ p,.hero-desc,.tl-bullets li{text-wrap:pretty}
           <span class="stag">React</span><span class="stag">Vite</span><span class="stag">FastAPI</span><span class="stag">Python</span><span class="stag">REST API</span>
         </div>
         <div class="proj-links-row">
-          <a href="https://github.com/shivacharan123/Doctor_appointment_chatbot" class="proj-lnk" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://github.com/shivacharan/clinic-ai-chatbot" class="proj-lnk" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
       </div>
     </div>
@@ -1071,7 +980,7 @@ p,.hero-desc,.tl-bullets li{text-wrap:pretty}
           <span class="model-card-name">Phi-2 Skincare Advisor</span>
         </div>
         <p class="model-card-desc">QLoRA fine-tuned Microsoft Phi-2 for ingredient-safety advisory. Hosted as a Hugging Face Space — no setup required, runs directly in your browser.</p>
-        <a href="https://huggingface.co/spaces/shivacharan099/skincare-advisor" class="proj-lnk" target="_blank" rel="noopener">Open Space ↗</a>
+        <a href="https://huggingface.co/spaces/shivacharan/skincare-advisor" class="proj-lnk" target="_blank" rel="noopener">Open Space ↗</a>
       </div>
       <div class="model-card">
         <div class="model-card-head">
@@ -1079,7 +988,7 @@ p,.hero-desc,.tl-bullets li{text-wrap:pretty}
           <span class="model-card-name">Plant Disease Classifier</span>
         </div>
         <p class="model-card-desc">Upload a leaf photo and get a real-time diagnosis across 38 disease classes from the ResNet50 model trained on PlantVillage.</p>
-        <a href="https://huggingface.co/spaces/shivacharan099/plant-disease-classifier" class="proj-lnk" target="_blank" rel="noopener">Open Space ↗</a>
+        <a href="https://huggingface.co/spaces/shivacharan/plant-disease-classifier" class="proj-lnk" target="_blank" rel="noopener">Open Space ↗</a>
       </div>
       <div class="model-card">
         <div class="model-card-head">
@@ -1087,7 +996,7 @@ p,.hero-desc,.tl-bullets li{text-wrap:pretty}
           <span class="model-card-name">Research Agent (API demo)</span>
         </div>
         <p class="model-card-desc">Give it any two dev tools to compare and watch the LangGraph state machine extract, research, and analyze live.</p>
-        <a href="https://github.com/shivacharan123/developer_tool-research" class="proj-lnk" target="_blank" rel="noopener">View on GitHub ↗</a>
+        <a href="https://github.com/shivacharan/developer_tool-research" class="proj-lnk" target="_blank" rel="noopener">View on GitHub ↗</a>
       </div>
     </div>
     <p style="font-family:var(--ff-mono);font-size:.68rem;color:var(--text3);margin-top:1.5rem">Note: replace these placeholder Space links with your actual Hugging Face Space URLs once deployed.</p>
@@ -1304,7 +1213,6 @@ p,.hero-desc,.tl-bullets li{text-wrap:pretty}
 
 <!-- CONTACT -->
 <section id="contact" class="sect">
-  <div class="aurora aurora--b" aria-hidden="true"><i></i><i></i><i></i></div>
   <div class="sect-inner">
     <div class="sect-header" style="border-color:rgba(255,255,255,.1)">
       <span class="sect-num">08</span>
@@ -1320,15 +1228,15 @@ p,.hero-desc,.tl-bullets li{text-wrap:pretty}
         <p class="contact-desc">I'm actively seeking full-time AI Engineer roles starting June 2026. Open to on-site, hybrid, or remote. If you're building ambitious AI systems and need someone who cares about production quality as much as model performance — let's talk.</p>
         <a href="mailto:shivacharangaddala1234@gmail.com" class="contact-email-link">shivacharangaddala1234@gmail.com</a>
         <div class="socials-list">
-          <a href="https://www.linkedin.com/in/shiva-charan9/" class="social-item" target="_blank">
+          <a href="https://www.linkedin.com/in/shiva-charan/" class="social-item" target="_blank">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
             LinkedIn — shiva
           </a>
-          <a href="https://github.com/shivacharan123" class="social-item" target="_blank">
+          <a href="https://github.com/shivacharan" class="social-item" target="_blank">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
             GitHub — shiva-git
           </a>
-          <a href="https://huggingface.co/shivacharan099" class="social-item" target="_blank">
+          <a href="https://huggingface.co/shivacharan" class="social-item" target="_blank">
             <span style="font-size:1rem;line-height:1;opacity:.7">🤗</span>
             Hugging Face — Profile
           </a>
@@ -1373,9 +1281,9 @@ p,.hero-desc,.tl-bullets li{text-wrap:pretty}
 <footer>
   <span class="footer-copy">© 2026 Shiva Charan Gaddala · Built with a production mindset · Nagpur, India</span>
   <div class="footer-right">
-    <a href="https://github.com/shivacharan123" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/shiva-charan9/" target="_blank">LinkedIn</a>
-    <a href="mailto:shivacharangaddala1234@gmail.com">Email</a>
+    <a href="https://github.com/shivacharan" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/shiva-charan/" target="_blank">LinkedIn</a>
+    <a href="mailto:shivacharangaddala@gmail.com">Email</a>
   </div>
 </footer>
 
@@ -1441,82 +1349,67 @@ document.getElementById('hamBtn').addEventListener('keydown',e=>{
   // and re-derives from system preference on reload.
 })();
 
-/* ── HERO CANVAS: REACTIVE, MORPHING AGENT NETWORK ── */
+/* ── HERO CANVAS: ANIMATED AGENT / NEURAL GRAPH ── */
 (function(){
-  const canvas=document.getElementById('heroCanvas'),hero=document.getElementById('hero');
-  if(!canvas||!hero)return;
+  const canvas=document.getElementById('heroCanvas');
   const ctx=canvas.getContext('2d');
-  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const mouse={x:-9999,y:-9999};
-  let w=0,h=0,nodes=[],pulses=[],run=true,raf=0,lastSpawn=0;
-  const t0=performance.now();
-  canvas.style.width='100%';canvas.style.height='100%';
+  const hero=document.getElementById('hero');
+  const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let w,h,nodes=[];
+  const NODE_COUNT=32;
 
-  function build(){
-    const dpr=Math.min(window.devicePixelRatio||1,2);
-    w=hero.offsetWidth;h=hero.offsetHeight;
-    canvas.width=w*dpr;canvas.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
-    const n=Math.max(28,Math.min(68,Math.round(w*h/26000))),cols=5;
-    nodes=Array.from({length:n},(_,i)=>{
-      const ax=Math.random()*w,ay=Math.random()*h;
-      return{ax,ay,bx:((i%cols)+.5)/cols*w+(Math.random()-.5)*w*.05,by:Math.random()*h,
-        ph:Math.random()*6.28,f:.15+Math.random()*.25,amp:8+Math.random()*18,
-        x:ax,y:ay,r:1+Math.random()*1.6,hot:0};
-    });
-    pulses=[];
+  function resize(){
+    w=canvas.width=hero.offsetWidth;
+    h=canvas.height=hero.offsetHeight;
   }
-  function draw(now){
-    const t=(now-t0)/1000,dark=document.documentElement.getAttribute('data-theme')==='dark';
-    const morph=reduce?.3:(Math.sin(t*.07)+1)/2*.65;
-    const line=dark?'245,243,238':'13,13,13',R=150,M=170;
+  function initNodes(){
+    nodes=Array.from({length:NODE_COUNT},()=>({
+      x:Math.random()*w,
+      y:Math.random()*h,
+      vx:(Math.random()-.5)*.25,
+      vy:(Math.random()-.5)*.25,
+      r:Math.random()*1.5+1
+    }));
+  }
+  function accentRGB(){
+    return getComputedStyle(document.documentElement).getPropertyValue('--ink').trim();
+  }
+  function draw(){
     ctx.clearRect(0,0,w,h);
-    for(const n of nodes){
-      let tx=n.ax+(n.bx-n.ax)*morph+Math.sin(t*n.f+n.ph)*n.amp;
-      let ty=n.ay+(n.by-n.ay)*morph+Math.cos(t*n.f*1.3+n.ph)*n.amp;
-      const dx=tx-mouse.x,dy=ty-mouse.y,d=Math.hypot(dx,dy);
-      const near=d<M?1-d/M:0;
-      if(near>0){tx+=dx/d*near*42;ty+=dy/d*near*42}
-      n.x+=(tx-n.x)*.08;n.y+=(ty-n.y)*.08;n.hot+=(near-n.hot)*.12;
-    }
-    const pairs=[];
-    for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){
-      const a=nodes[i],b=nodes[j],d=Math.hypot(a.x-b.x,a.y-b.y);
-      if(d>=R)continue;
-      pairs.push([i,j]);
-      const k=Math.max(a.hot,b.hot);
-      ctx.strokeStyle=k>.05?'rgba(255,59,0,'+(.25+k*.55)+')':'rgba('+line+','+((1-d/R)*.2)+')';
-      ctx.lineWidth=k>.05?1.1:.6;
-      ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();
-    }
-    for(const n of nodes){
-      const d=Math.hypot(n.x-mouse.x,n.y-mouse.y);
-      if(d<M){ctx.strokeStyle='rgba(255,59,0,'+(1-d/M)*.35+')';ctx.lineWidth=.8;
-        ctx.beginPath();ctx.moveTo(mouse.x,mouse.y);ctx.lineTo(n.x,n.y);ctx.stroke()}
-      ctx.fillStyle=n.hot>.05?'rgba(255,59,0,'+(.55+n.hot*.4)+')':'rgba('+line+','+(dark?.55:.45)+')';
-      ctx.beginPath();ctx.arc(n.x,n.y,n.r+n.hot*1.8,0,6.283);ctx.fill();
-    }
-    if(!reduce){
-      if(pairs.length&&pulses.length<14&&now-lastSpawn>240){
-        const p=pairs[(Math.random()*pairs.length)|0];
-        pulses.push({a:p[0],b:p[1],p:0,s:.008+Math.random()*.012});lastSpawn=now;
+    const isDark=document.documentElement.getAttribute('data-theme')==='dark';
+    const lineColor=isDark?'rgba(245,243,238,0.12)':'rgba(13,13,13,0.10)';
+    const nodeColor=isDark?'rgba(245,243,238,0.55)':'rgba(13,13,13,0.45)';
+    const accentColor='rgba(255,59,0,0.55)';
+    for(let i=0;i<nodes.length;i++){
+      const a=nodes[i];
+      if(!reduceMotion){
+        a.x+=a.vx; a.y+=a.vy;
+        if(a.x<0||a.x>w)a.vx*=-1;
+        if(a.y<0||a.y>h)a.vy*=-1;
       }
-      pulses=pulses.filter(q=>q.p<1);
-      for(const q of pulses){
-        q.p+=q.s;const a=nodes[q.a],b=nodes[q.b];
-        const x=a.x+(b.x-a.x)*q.p,y=a.y+(b.y-a.y)*q.p;
-        ctx.fillStyle='rgba(255,59,0,.9)';ctx.shadowColor='rgba(255,59,0,.8)';ctx.shadowBlur=8;
-        ctx.beginPath();ctx.arc(x,y,2,0,6.283);ctx.fill();ctx.shadowBlur=0;
+      for(let j=i+1;j<nodes.length;j++){
+        const b=nodes[j];
+        const dx=a.x-b.x, dy=a.y-b.y;
+        const dist=Math.sqrt(dx*dx+dy*dy);
+        if(dist<140){
+          ctx.strokeStyle=dist<70?accentColor:lineColor;
+          ctx.lineWidth=dist<70?1:0.6;
+          ctx.beginPath();
+          ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y);
+          ctx.stroke();
+        }
       }
     }
+    for(const n of nodes){
+      ctx.fillStyle=nodeColor;
+      ctx.beginPath();
+      ctx.arc(n.x,n.y,n.r,0,Math.PI*2);
+      ctx.fill();
+    }
+    if(!reduceMotion)requestAnimationFrame(draw);
   }
-  function loop(now){if(!run){raf=0;return}draw(now);raf=requestAnimationFrame(loop)}
-  function start(){if(!reduce&&!raf&&run)raf=requestAnimationFrame(loop)}
-  build();draw(performance.now());start();
-  hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();mouse.x=e.clientX-r.left;mouse.y=e.clientY-r.top});
-  hero.addEventListener('pointerleave',()=>{mouse.x=mouse.y=-9999});
-  new IntersectionObserver(es=>{run=es[0].isIntersecting&&!document.hidden;start()}).observe(hero);
-  document.addEventListener('visibilitychange',()=>{run=!document.hidden;start()});
-  let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{build();if(reduce)draw(performance.now())},150)});
+  resize(); initNodes(); draw();
+  window.addEventListener('resize',()=>{resize();initNodes();if(reduceMotion)draw()});
 })();
 
 /* ── PROJECT FILTER + SEARCH ── */
@@ -1568,116 +1461,6 @@ document.getElementById('hamBtn').addEventListener('keydown',e=>{
     node.addEventListener('click',activate);
     node.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();activate();}});
   });
-})();
-
-/* ═══════ UPGRADE PACK ═══════ */
-document.documentElement.classList.add('js');
-
-/* 1 · film grain / scanline toggle (auto-on in dark mode until the user chooses) */
-(function(){
-  const root=document.documentElement,btn=document.getElementById('filmToggle');
-  let user=null;try{user=localStorage.getItem('film')}catch(e){}
-  function apply(){
-    const on=user?user==='on':root.getAttribute('data-theme')==='dark';
-    root.setAttribute('data-film',on?'on':'off');
-    if(btn)btn.setAttribute('aria-pressed',on);
-  }
-  apply();
-  new MutationObserver(apply).observe(root,{attributes:true,attributeFilter:['data-theme']});
-  if(btn)btn.addEventListener('click',()=>{
-    user=root.getAttribute('data-film')==='on'?'off':'on';
-    try{localStorage.setItem('film',user)}catch(e){}
-    apply();
-  });
-})();
-
-/* 2 · magnetic pull + springy tilt/scale */
-(function(){
-  if(!matchMedia('(hover:hover) and (pointer:fine)').matches||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-  const K=.14,D=.76,items=new Map();let raf=0;
-  const rest=()=>({x:0,y:0,rx:0,ry:0,s:1,r:0});
-  function reg(el,type){
-    if(items.has(el))return;
-    el.setAttribute('data-spring','');
-    const st={type,p:rest(),v:{x:0,y:0,rx:0,ry:0,s:0,r:0},t:rest(),r:null};
-    items.set(el,st);
-    if(type!=='mag'){
-      el.addEventListener('pointermove',e=>{
-        const b=el.getBoundingClientRect(),nx=(e.clientX-b.left)/b.width-.5,ny=(e.clientY-b.top)/b.height-.5;
-        if(type==='tilt')Object.assign(st.t,{rx:-ny*5,ry:nx*5,s:1.015});
-        else Object.assign(st.t,{x:nx*4,r:nx*5-2,s:1.08});
-        kick();
-      });
-      el.addEventListener('pointerleave',()=>{st.t=rest();kick()});
-    }
-  }
-  document.querySelectorAll('.btn,.nav-badge,.theme-toggle,.social-item,.filter-btn,.nav-links a,.proj-lnk,.footer-right a').forEach(e=>reg(e,'mag'));
-  document.querySelectorAll('.proj-card,.blog-card,.model-card,.testimonial-card,.profile-box,.avail-card').forEach(e=>reg(e,'tilt'));
-  document.querySelectorAll('.pill').forEach(e=>reg(e,'pop'));
-
-  let mx=-999,my=-999,pend=false;
-  document.addEventListener('pointermove',e=>{
-    mx=e.clientX;my=e.clientY;
-    if(pend)return;pend=true;
-    requestAnimationFrame(()=>{
-      pend=false;
-      items.forEach((st,el)=>{
-        if(st.type!=='mag')return;
-        const b=el.getBoundingClientRect();
-        if(b.bottom<-120||b.top>innerHeight+120)return;
-        const cx=b.left+b.width/2,cy=b.top+b.height/2,dx=mx-cx,dy=my-cy,d=Math.hypot(dx,dy);
-        const reach=Math.max(b.width,b.height)/2+60;
-        if(d<reach){
-          const f=1-d/reach;
-          Object.assign(st.t,{x:dx*.28*f+dx*.06,y:dy*.34*f+dy*.06,r:dx/b.width*2.5,s:1+.05*f});
-        }else st.t=rest();
-      });
-      kick();
-    });
-  });
-  function kick(){if(!raf)raf=requestAnimationFrame(tick)}
-  function tick(){
-    let moving=false;
-    items.forEach((st,el)=>{
-      let m=false;
-      for(const k in st.p){
-        st.v[k]=(st.v[k]+(st.t[k]-st.p[k])*K)*D;
-        st.p[k]+=st.v[k];
-        if(Math.abs(st.v[k])>.002||Math.abs(st.t[k]-st.p[k])>.002)m=true;
-      }
-      const p=st.p;
-      const s=m?'translate3d('+p.x+'px,'+p.y+'px,0) perspective(900px) rotateX('+p.rx+'deg) rotateY('+p.ry+'deg) rotate('+p.r+'deg) scale('+p.s+')':'';
-      if(s!==st.r||!m){el.style.transform=s;st.r=s}
-      if(m)moving=true;
-    });
-    raf=moving?requestAnimationFrame(tick):0;
-  }
-})();
-
-/* 3 · direction-aware staggered reveals + accent line */
-(function(){
-  const RV='.skill-group,.proj-card,.tl-item,.cert-item,.blog-card,.testimonial-card,.model-card,.edu-card2,.pf-body,.pf-visual,.about-sidebar,.about-main,.contact-grid>div,.contact-right>*';
-  document.querySelectorAll('.case-study.fade-in').forEach((el,i)=>el.setAttribute('data-dir',i%2?'right':'left'));
-  function prep(c){
-    const cr=c.getBoundingClientRect();
-    c.querySelectorAll(RV).forEach((k,i)=>{
-      k.classList.add('rv');
-      const r=k.getBoundingClientRect(),cx=(r.left+r.width/2)-(cr.left+cr.width/2);
-      let dx='0px',dy='32px';
-      if(r.width<cr.width*.7&&Math.abs(cx)>cr.width*.12){dx=cx<0?'-44px':'44px';dy='0px'}
-      k.style.setProperty('--i',Math.min(i,9));k.style.setProperty('--dx',dx);k.style.setProperty('--dy',dy);
-    });
-  }
-  const pre=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){prep(e.target);pre.unobserve(e.target)}}),{rootMargin:'0px 0px 25% 0px'});
-  document.querySelectorAll('.fade-in').forEach(el=>pre.observe(el));
-  const hd=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('line-in');hd.unobserve(e.target)}}),{rootMargin:'0px 0px -10% 0px'});
-  document.querySelectorAll('.sect-header').forEach(el=>hd.observe(el));
-})();
-
-/* 5 · pause aurora when off-screen */
-(function(){
-  const io=new IntersectionObserver(es=>es.forEach(e=>e.target.classList.toggle('paused',!e.isIntersecting)));
-  document.querySelectorAll('.aurora').forEach(a=>io.observe(a));
 })();
 </script>
 
