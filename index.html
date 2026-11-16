@@ -12,12 +12,12 @@
   "name": "Shiva Charan Gaddala",
   "jobTitle": "AI Engineer",
   "description": "AI Engineer specializing in LLMs, Agentic AI, and production-grade ML systems.",
-  "email": "mailto:shivacharangaddala1234@gmail.com",
+  "email": "mailto:shivacharangaddala@gmail.com",
   "url": "https://shivacharangaddal.dev",
   "sameAs": [
-    "https://github.com/shivacharan123",
-    "https://www.linkedin.com/in/shiva-charan9/",
-    "https://huggingface.co/shivacharan099"
+    "https://github.com/shivacharan",
+    "https://www.linkedin.com/in/shiva-charan/",
+    "https://huggingface.co/shivacharan"
   ],
   "alumniOf": {
     "@type": "CollegeOrUniversity",
@@ -213,6 +213,7 @@ section.sect{padding:100px 40px}
 .proj-lnk{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--text2);text-decoration:none;display:flex;align-items:center;gap:.3rem;border-bottom:1px solid var(--line2);padding-bottom:.15rem;transition:all var(--tr)}
 .proj-lnk:hover{color:var(--accent);border-color:var(--accent)}
 .projects-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border:1px solid var(--line2);border-top:none}
+.projects-grid.two-col{grid-template-columns:1fr 1fr}
 .proj-card{padding:2rem;border-right:1px solid var(--line2);border-bottom:1px solid var(--line2);transition:background var(--tr)}
 .proj-card:hover{background:var(--ink)}
 .proj-card:hover .proj-title-sm,.proj-card:hover .proj-desc-sm,.proj-card:hover .proj-type,.proj-card:hover .proj-lnk{color:var(--paper)}
@@ -402,6 +403,7 @@ footer{background:var(--ink2);border-top:1px solid rgba(255,255,255,.06);padding
 }
 @media(max-width:600px){
   .projects-grid{grid-template-columns:1fr}
+  .projects-grid.two-col{grid-template-columns:1fr}
   .proj-card{border-right:none}
   .certs-list{grid-template-columns:1fr}
   .cert-item{border-right:none}
@@ -493,7 +495,7 @@ footer{background:var(--ink2);border-top:1px solid rgba(255,255,255,.06);padding
       <div class="hero-right">
         <div class="hero-stats-row">
           <div class="hstat">
-            <div class="hstat-num">5</div>
+            <div class="hstat-num">6</div>
             <div class="hstat-label">ML Projects</div>
           </div>
           <div class="hstat">
@@ -511,7 +513,7 @@ footer{background:var(--ink2);border-top:1px solid rgba(255,255,255,.06);padding
         </div>
         <div class="hero-actions">
           <a href="#projects" class="btn btn-fill">View Projects</a>
-          <a href="https://www.linkedin.com/in/shiva-charan9/" class="btn btn-accent">Get In Touch</a>
+          <a href="https://www.linkedin.com/in/shiva-charan/" class="btn btn-accent">Get In Touch</a>
           <a href="https://drive.google.com/file/d/1RvNfmQg_SEXoLgJ3aQPgD76H-cvrSpDE/view?usp=sharing" class="btn">↓ Resume</a>
         </div>
       </div>
@@ -570,7 +572,7 @@ footer{background:var(--ink2);border-top:1px solid rgba(255,255,255,.06);padding
           <span class="status-pulse"></span>
           Available June 2026
         </div>
-        <a href="https://www.linkedin.com/in/shiva-charan9/" class="btn btn-fill" style="text-align:center;justify-content:center">Contact Me</a>
+        <a href="https://www.linkedin.com/in/shiva-charan/" class="btn btn-fill" style="text-align:center;justify-content:center">Contact Me</a>
       </div>
       <div class="about-main">
         <p>I'm a Computer Science student at IIIT Nagpur, specializing in Artificial Intelligence and Machine Learning. My obsession is the gap between a brilliant model on a Jupyter notebook and a system that actually ships — and I've spent the last two years closing that gap through real projects, late nights debugging LangGraph state machines, and learning what <strong>"production-grade" truly means.</strong></p>
@@ -715,6 +717,7 @@ footer{background:var(--ink2);border-top:1px solid rgba(255,255,255,.06);padding
         <button class="filter-btn" data-filter="llm">LLM Fine-Tuning</button>
         <button class="filter-btn" data-filter="cv">Computer Vision</button>
         <button class="filter-btn" data-filter="medical">Medical AI</button>
+        <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
       </div>
       <div class="filter-empty" id="filterEmpty" hidden>No projects match — try a different filter or search term.</div>
     </div>
@@ -734,7 +737,7 @@ footer{background:var(--ink2);border-top:1px solid rgba(255,255,255,.06);padding
           <span class="stag">Python</span><span class="stag">LangGraph</span><span class="stag">LangChain</span><span class="stag">FastAPI</span><span class="stag">Firecrawl</span><span class="stag">Pydantic</span><span class="stag">ThreadPoolExecutor</span>
         </div>
         <div class="proj-links-row">
-          <a href="https://github.com/shivacharan123/developer_tool-research" class="proj-lnk" target="_blank">
+          <a href="https://github.com/shivacharan/developer_tool-research" class="proj-lnk" target="_blank">
             <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
             GitHub
           </a>
@@ -817,7 +820,7 @@ footer{background:var(--ink2);border-top:1px solid rgba(255,255,255,.06);padding
           <span class="stag">QLoRA</span><span class="stag">PEFT</span><span class="stag">TRL</span><span class="stag">BitsAndBytes</span>
         </div>
         <div class="proj-links-row">
-          <a href="https://github.com/shivacharan123/SKINCARE_advisor" class="proj-lnk" target="_blank">GitHub ↗</a>
+          <a href="https://github.com/shivacharan/SKINCARE_advisor" class="proj-lnk" target="_blank">GitHub ↗</a>
         </div>
       </div>
 
@@ -834,13 +837,13 @@ footer{background:var(--ink2);border-top:1px solid rgba(255,255,255,.06);padding
           <span class="stag">PyTorch</span><span class="stag">ResNet50</span><span class="stag">Random Forest</span>
         </div>
         <div class="proj-links-row">
-          <a href="https://github.com/shivacharan123/leaf-disease-classification" class="proj-lnk" target="_blank">GitHub ↗</a>
+          <a href="https://github.com/shivacharan/leaf-disease-classification" class="proj-lnk" target="_blank">GitHub ↗</a>
         </div>
       </div>
     </div>
 
-    <div class="projects-grid fade-in" style="border-top:none;margin-top:0">
-      <div class="proj-card" style="grid-column:1/-1;border-right:none" data-tags="medical cv">
+    <div class="projects-grid two-col fade-in" style="border-top:none;margin-top:0">
+      <div class="proj-card" data-tags="medical cv">
         <div class="proj-type" style="color:#fbbf24"><span class="type-dot" style="background:#fbbf24"></span>Medical AI</div>
         <div class="proj-title-sm">Lung Cancer CT Scan Classification</div>
         <p class="proj-desc-sm">Systematic benchmark of four CNN architectures (ResNet50, MobileNetV2, DenseNet121, VGG19) for 4-class CT scan diagnosis. ResNet50 best at 80.95% precision.</p>
@@ -853,7 +856,23 @@ footer{background:var(--ink2);border-top:1px solid rgba(255,255,255,.06);padding
           <span class="stag">TensorFlow</span><span class="stag">ResNet50</span><span class="stag">DenseNet121</span>
         </div>
         <div class="proj-links-row">
-          <a href="https://github.com/shivacharan123/lung_cancer_pred" class="proj-lnk" target="_blank">GitHub ↗</a>
+          <a href="https://github.com/shivacharan/lung_cancer_pred" class="proj-lnk" target="_blank">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="proj-card" style="border-right:none" data-tags="fullstack medical">
+        <div class="proj-type" style="color:#f472b6"><span class="type-dot" style="background:#f472b6"></span>Full-Stack · Healthcare</div>
+        <div class="proj-title-sm">Clinic AI Chatbot: Guided Triage &amp; Appointment Booking</div>
+        <p class="proj-desc-sm">Chat-style web app that helps patients pick the right doctor through a click-based symptom questionnaire, then books an appointment. A rule-based engine with emergency red-flag detection ranks doctors only from the clinic's own list, so it never recommends outside it. React + FastAPI, with CSV-backed booking and input validation.</p>
+        <div class="proj-metrics-row" style="margin-bottom:1rem">
+          <div class="pm"><span class="pm-val">6</span><span class="pm-key">Triage Steps</span></div>
+          <div class="pm"><span class="pm-val">Top 3</span><span class="pm-key">Doctor Matches</span></div>
+          <div class="pm"><span class="pm-val">7-Day</span><span class="pm-key">Rolling Slots</span></div>
+        </div>
+        <div class="stack-row">
+          <span class="stag">React</span><span class="stag">Vite</span><span class="stag">FastAPI</span><span class="stag">Python</span><span class="stag">REST API</span>
+        </div>
+        <div class="proj-links-row">
+          <a href="https://github.com/shivacharan/clinic-ai-chatbot" class="proj-lnk" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
       </div>
     </div>
@@ -961,7 +980,7 @@ footer{background:var(--ink2);border-top:1px solid rgba(255,255,255,.06);padding
           <span class="model-card-name">Phi-2 Skincare Advisor</span>
         </div>
         <p class="model-card-desc">QLoRA fine-tuned Microsoft Phi-2 for ingredient-safety advisory. Hosted as a Hugging Face Space — no setup required, runs directly in your browser.</p>
-        <a href="https://huggingface.co/spaces/shivacharan099/skincare-advisor" class="proj-lnk" target="_blank" rel="noopener">Open Space ↗</a>
+        <a href="https://huggingface.co/spaces/shivacharan/skincare-advisor" class="proj-lnk" target="_blank" rel="noopener">Open Space ↗</a>
       </div>
       <div class="model-card">
         <div class="model-card-head">
@@ -969,7 +988,7 @@ footer{background:var(--ink2);border-top:1px solid rgba(255,255,255,.06);padding
           <span class="model-card-name">Plant Disease Classifier</span>
         </div>
         <p class="model-card-desc">Upload a leaf photo and get a real-time diagnosis across 38 disease classes from the ResNet50 model trained on PlantVillage.</p>
-        <a href="https://huggingface.co/spaces/shivacharan099/plant-disease-classifier" class="proj-lnk" target="_blank" rel="noopener">Open Space ↗</a>
+        <a href="https://huggingface.co/spaces/shivacharan/plant-disease-classifier" class="proj-lnk" target="_blank" rel="noopener">Open Space ↗</a>
       </div>
       <div class="model-card">
         <div class="model-card-head">
@@ -977,7 +996,7 @@ footer{background:var(--ink2);border-top:1px solid rgba(255,255,255,.06);padding
           <span class="model-card-name">Research Agent (API demo)</span>
         </div>
         <p class="model-card-desc">Give it any two dev tools to compare and watch the LangGraph state machine extract, research, and analyze live.</p>
-        <a href="https://github.com/shivacharan123/developer_tool-research" class="proj-lnk" target="_blank" rel="noopener">View on GitHub ↗</a>
+        <a href="https://github.com/shivacharan/developer_tool-research" class="proj-lnk" target="_blank" rel="noopener">View on GitHub ↗</a>
       </div>
     </div>
     <p style="font-family:var(--ff-mono);font-size:.68rem;color:var(--text3);margin-top:1.5rem">Note: replace these placeholder Space links with your actual Hugging Face Space URLs once deployed.</p>
@@ -1020,6 +1039,7 @@ footer{background:var(--ink2);border-top:1px solid rgba(255,255,255,.06);padding
             <li>Architected a <strong>production-grade agentic research system</strong> using LangGraph, achieving 75% latency reduction through parallel processing and intelligent caching strategies.</li>
             <li>Successfully <strong>fine-tuned a 2.7B-parameter LLM</strong> (Microsoft Phi-2) on a domain-specific dataset using QLoRA within 4 GB VRAM — demonstrating resource-efficient ML engineering on consumer hardware.</li>
             <li>Built and deployed a <strong>FastAPI REST backend</strong> with exponential backoff, health monitoring, and schema validation — production patterns applied to personal projects.</li>
+            <li>Built a <strong>full-stack clinic assistant</strong> (React + FastAPI) with a guided symptom-triage engine, emergency red-flag handling, policy-restricted doctor recommendations, and validated appointment booking.</li>
           </ul>
         </div>
       </div>
@@ -1208,15 +1228,15 @@ footer{background:var(--ink2);border-top:1px solid rgba(255,255,255,.06);padding
         <p class="contact-desc">I'm actively seeking full-time AI Engineer roles starting June 2026. Open to on-site, hybrid, or remote. If you're building ambitious AI systems and need someone who cares about production quality as much as model performance — let's talk.</p>
         <a href="mailto:shivacharangaddala1234@gmail.com" class="contact-email-link">shivacharangaddala1234@gmail.com</a>
         <div class="socials-list">
-          <a href="https://www.linkedin.com/in/shiva-charan9/" class="social-item" target="_blank">
+          <a href="https://www.linkedin.com/in/shiva-charan/" class="social-item" target="_blank">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
             LinkedIn — shiva
           </a>
-          <a href="https://github.com/shivacharan123" class="social-item" target="_blank">
+          <a href="https://github.com/shivacharan" class="social-item" target="_blank">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
             GitHub — shiva-git
           </a>
-          <a href="https://huggingface.co/shivacharan099" class="social-item" target="_blank">
+          <a href="https://huggingface.co/shivacharan" class="social-item" target="_blank">
             <span style="font-size:1rem;line-height:1;opacity:.7">🤗</span>
             Hugging Face — Profile
           </a>
@@ -1261,9 +1281,9 @@ footer{background:var(--ink2);border-top:1px solid rgba(255,255,255,.06);padding
 <footer>
   <span class="footer-copy">© 2026 Shiva Charan Gaddala · Built with a production mindset · Nagpur, India</span>
   <div class="footer-right">
-    <a href="https://github.com/shivacharan123" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/shiva-charan9/" target="_blank">LinkedIn</a>
-    <a href="mailto:shivacharangaddala1234@gmail.com">Email</a>
+    <a href="https://github.com/shivacharan" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/shiva-charan/" target="_blank">LinkedIn</a>
+    <a href="mailto:shivacharangaddala@gmail.com">Email</a>
   </div>
 </footer>
 
